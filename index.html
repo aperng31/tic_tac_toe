@@ -11,9 +11,20 @@
     <div class="container">
 
         <header>
-            <div class="player_label">Player 1:</div>
-            <div class="title">Tic-Tac-Toe</div>
-            <div class="player_label">Player 2:</div>
+            <div class="player_label">
+                <div>Player 1 (X)</div>
+                <div class="winMarker" id="x"></div>
+            </div>
+
+            <div class="title">
+                <span>Tic-Tac-Toe</span>
+                <button id="restart">Restart</button>
+            </div>
+            <div class="player_label">
+                <div>Player 2 (O)</div>
+                <div class="winMarker" id="o"></div>    
+            </div>
+
             <!-- add image of X/O after? -->
         </header>
         <div id="game_grid">

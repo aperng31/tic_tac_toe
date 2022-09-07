@@ -1,17 +1,50 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;;
     width: 100%;
+    height: 100px;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 34%;
+
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.title button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
 header .player_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
     font-weight: bold;
+    width: 33%;
+    height: 100%;
+    
+}
+
+.winMarker { 
+    height: 30px;
 }
 .container {
     display: flex;
@@ -29,8 +62,8 @@ header .player_label {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 8px;
 
-    width: 100%;
-    height: 100%;
+    width: min(100%, 100vh);
+    height: min(100%, 100vw);
 
 }
 
